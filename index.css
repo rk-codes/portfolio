@@ -3,76 +3,135 @@
 }
 body {
     font-size: 18px;
+    /* background-image: url('./assets/background1.png'); */
 }
 .navbar {
     display: flex;
-    border: 1px solid red;
-    background-color: gray;
+    justify-content: flex-end;
+    /* border: 1px solid red; */
+    background-color: #403b3b;
     position: fixed;
     top: 0;
     width: 100%;
+}
+.navbar p {
+    font-family: 'Playball', cursive;
+    color: white;
 }
 .nav-list {
     list-style: none; 
 }
 .nav-list a{
     text-decoration: none;
+    color: white;
+}
+.nav-list a:hover {
+    color: #ffcb08;
 }
 .nav-list li {
     display: inline;
-    padding: 8px;
+    margin: 15px;
+}
+.brief-intro {
+    max-width: 600px;
+    margin: 0 auto;
+    color: black;
+}
+.brief-intro h1 {
+    font-family: 'Work Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 2.8em;
+}
+.brief-intro p {
+    font-size: 1.5em;
+}
+.about-data {
+    display: flex;
 }
 .profile-img {
     border-radius: 50%;
     width: 170px;
 }
 .hero-container {
-    border: 2px solid green;
-    background-color: dodgerblue;
+    background-color: #68c39f;
     color: white;
     padding: 10px;
-    height: 700px;
+    height: 500px;
     text-align: center;
+    margin-top: 60px;
+    background-image: url('./assets/hero_pic_r.jpg');
+    background-size: cover;
+    background-position: center;
 }
-.projects-container {
+.intro {
+    border: 3px solid #f8c119;
+    padding: 20px;
+    line-height: 1.7;
+    text-align: left;
+    font-family: 'Work Sans', sans-serif;
+}
+.projects-container{
     display: flex;
     flex-direction: column;
 }
-.projects-heading {
+.projects-heading, .about-container h2{
     text-align: center;
+    text-transform: uppercase;
 }
+/* .projects-heading span {
+    color: #ffcb08;
+} */
 .project {
     border: 2px solid yellow;
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
     padding: 10px;
     display: flex;
     justify-content: center;
+    margin-bottom: 20px;
     /* flex-wrap: wrap; */
 }
 .icons-box {
-    margin: 20px;
+    margin-bottom: 20px;
 }
-.project a {
-    margin: 10px;
+.app-link{
+    margin-left: 0;
+}
+
+.img-container {
+    width: 100%;
 }
 .project-img {
-     /* max-width: 500px; */
-    /* min-height: 300px; */
-    /* max-height: 400px;  */
-    /* width: 40%;
-    height: 50%; */
-
-
     max-width: 100%;
     border: 3px solid white;
-
     width: 450px;
     max-width: 100%; 
     max-height: 450px;
+    border: 3px solid #8a8585;
+}
+.projects-heading, .about-container h2 {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 2em;
+}
+.project-name {
+    font-size: 1.4em;
 }
 .project-details {
     padding: 8px;
+    margin-left: 20px;
+    font-family: 'Work Sans', sans-serif;
     /* max-width: 50%; */
+}
+.project-details a {
+    border: 2px solid #ffcb08;
+    text-decoration: none;
+    padding: 5px;
+    color: gray;
+}
+.project-details p {
+    line-height: 1.5;
+}
+.project-details a:hover {
+    background-color: #ffcb08;
 }
 .redux-logo, .jquery-logo {
     height: 30px;
@@ -81,10 +140,15 @@ body {
 .footer-container i{
     /* background-color: black;
     color: white; */
-    color: black;
+    color: white;
+    
 }
 .footer-container {
-    text-align: center;;
+    text-align: center;
+    background-color: #403b3b;
+    /* background-image: url('./assets/background.png'); */
+    padding: 20px;
+    color: white;
 }
 .fa-react {
     color: rgb(34, 214, 214);
@@ -103,11 +167,12 @@ body {
 }
 
 
-/* @media(min-width: 850px) {
+@media(min-width: 768px) {
     .project-img {
-        width: 80%;
+        width: 100%;
+        height: 100%;
     }
-} */
+}
 @media(max-width: 769px) {
     .project{
         flex-wrap: wrap;
