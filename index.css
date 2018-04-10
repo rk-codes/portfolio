@@ -3,7 +3,6 @@
 }
 body {
     font-size: 18px;
-    /* background-image: url('./assets/background1.png'); */
 }
 .navbar {
     display: flex;
@@ -12,7 +11,7 @@ body {
     background-color: #403b3b;
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 99%;
     opacity: 0.8;
 }
 .navbar p {
@@ -35,7 +34,7 @@ body {
 }
 .brief-intro {
     max-width: 600px;
-    margin: 10% auto;
+    /* margin: 10% auto; */
     color: black;
     /* color: white; */
     font-weight: 400;
@@ -44,9 +43,15 @@ body {
     font-family: 'Work Sans', sans-serif;
     text-transform: uppercase;
     font-size: 2.8em;
+    font-weight: 400;
 }
 .brief-intro p {
     font-size: 1.5em;
+}
+.brief-intro span{
+    /* color: rgb(20, 171, 20); */
+    color: rgb(22, 247, 239);
+    font-weight: 700;
 }
 .about-container {
     /* width: 90%;
@@ -59,7 +64,10 @@ body {
     /* background: #847f7f; */
     opacity: 0.8;
     /* color: white; */
-    width: 100%;
+    width: 80%;
+    margin: 10px auto;
+    flex-wrap: wrap;
+
 }
 .about-data h2 {
     align-self: center;
@@ -77,12 +85,12 @@ body {
     /* margin-top: 60px; */
     /* background-image: url('./assets/hero_pic_r.jpg'); */
     /* background-image: url('http://ak9.picdn.net/shutterstock/videos/7610479/thumb/1.jpg'); */
-    background-image: url('http://1.bp.blogspot.com/-AgAawRNK2aU/TeaKDBn4H4I/AAAAAAAAAF4/uUKlswlv_ik/s1600/hellspikes.jpg');
+    background-image: url('./assets/hero_background.jpg');
     background-size: cover;
     background-position: center;
 }
 .intro {
-    border: 3px solid #f8c119;
+    /* border: 3px solid #f8c119; */
     padding: 20px;
     line-height: 1.7;
     text-align: left;
@@ -97,7 +105,7 @@ body {
     flex-direction: column;
     width: 100%;
     margin: 0 auto;
-    background-image: url('http://ak2.picdn.net/shutterstock/videos/10177472/thumb/4.jpg?i10c=img.resize(height:160)');
+    background-image: url('./assets/projects_background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -153,7 +161,8 @@ body {
     /* max-width: 50%; */
 }
 .project-details a {
-    border: 2px solid #ffcb08;
+    /* border: 2px solid #ffcb08; */
+    border: 2px solid #319bde;
     text-decoration: none;
     padding: 5px;
     color: gray;
@@ -203,7 +212,6 @@ body {
         height: 100%;
       
     }
-
 }
 @media(max-width: 769px) {
     .project{
@@ -214,5 +222,13 @@ body {
     }
     .brief-intro {
         margin: 30% auto;
+    }
+    .navbar {
+        width: 96%;
+    }
+}
+@media(min-width: 1024px) {
+    .brief-intro {
+       padding-top: 50px;
     }
 }
