@@ -1,7 +1,16 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-size: 18px;
+}
 .navbar {
     display: flex;
     border: 1px solid red;
     background-color: gray;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 .nav-list {
     list-style: none; 
@@ -13,16 +22,94 @@
     display: inline;
     padding: 8px;
 }
+.profile-img {
+    border-radius: 50%;
+    width: 170px;
+}
 .hero-container {
     border: 2px solid green;
     background-color: dodgerblue;
     color: white;
     padding: 10px;
     height: 700px;
+    text-align: center;
 }
-
+.projects-container {
+    display: flex;
+    flex-direction: column;
+}
+.projects-heading {
+    text-align: center;
+}
 .project {
     border: 2px solid yellow;
     background-color: aquamarine;
     padding: 10px;
+    display: flex;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+}
+.icons-box {
+    margin: 20px;
+}
+.project a {
+    margin: 10px;
+}
+.project-img {
+     /* max-width: 500px; */
+    /* min-height: 300px; */
+    /* max-height: 400px;  */
+    /* width: 40%;
+    height: 50%; */
+
+
+    max-width: 100%;
+    border: 3px solid white;
+
+    width: 450px;
+    max-width: 100%; 
+    max-height: 450px;
+}
+.project-details {
+    padding: 8px;
+    /* max-width: 50%; */
+}
+.redux-logo, .jquery-logo {
+    height: 30px;
+    width: 30px;
+}
+.footer-container i{
+    /* background-color: black;
+    color: white; */
+    color: black;
+}
+.footer-container {
+    text-align: center;;
+}
+.fa-react {
+    color: rgb(34, 214, 214);
+}
+.fa-node-js {
+    color: rgb(68, 202, 68);
+}
+.fa-js-square {
+    color: rgb(240, 178, 63);
+}
+.fa-html5 {
+    color: rgb(245, 111, 87);
+}
+.fa-css3-alt {
+    color: rgb(85, 167, 235);
+}
+
+
+/* @media(min-width: 850px) {
+    .project-img {
+        width: 80%;
+    }
+} */
+@media(max-width: 769px) {
+    .project{
+        flex-wrap: wrap;
+    }
 }
