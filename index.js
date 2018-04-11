@@ -1,6 +1,6 @@
 $('.about-link').click(function() {
     $('html, body').animate({
-      scrollTop: $('.hero-container').offset().top
+      scrollTop: $('.about-container').offset().top
     }, 800);
   });
   
