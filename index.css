@@ -70,7 +70,8 @@ body {
 
 }
 .about-data h2 {
-    align-self: center;
+    /* align-self: center; */
+    margin-bottom: 0;
 }
 .profile-img {
     border-radius: 50%;
@@ -94,6 +95,7 @@ body {
     line-height: 1.7;
     text-align: left;
     font-family: 'Work Sans', sans-serif;
+    padding-left: 0;
 }
 
 .hr-line {
@@ -126,7 +128,7 @@ body {
     margin: 40px auto;
 }
 .icons-box {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 .app-link{
     margin-left: 0;
@@ -174,8 +176,9 @@ body {
     width: 30px;
 }
 
-.fa-envelope, .fa-github {
+.fa-envelope, .fa-github, .fa-linkedin {
     color: white;
+    padding: 5px;
 }
 .footer-container {
     text-align: center;
