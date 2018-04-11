@@ -106,9 +106,9 @@ body {
     flex-direction: column;
     width: 100%;
     margin: 0 auto;
-    background-image: url('./assets/projects_background.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
+    /* background-image: url('./assets/projects_background.jpg'); */
+    /* background-size: cover;
+    background-repeat: no-repeat; */
 }
 .projects-heading, .about-container h2{
     text-align: center;
@@ -118,7 +118,7 @@ body {
     color: #ffcb08;
 } */
 .project {
-    padding: 10px;
+    padding: 20px;
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
@@ -126,6 +126,7 @@ body {
     /* flex-wrap: wrap; */
     max-width: 90%;
     margin: 40px auto;
+    border-bottom: 1px solid gray;
 }
 .icons-box {
     margin-bottom: 30px;
@@ -135,7 +136,8 @@ body {
 }
 
 .img-container {
-    max-width: 90%;
+    /* max-width: 90%; */
+    max-width: 500px;
 }
 .project-img {
     max-width: 100%;
@@ -143,7 +145,7 @@ body {
     /* width: 450px; */
     /* max-width: 80%; 
     max-height: 80%; */
-    border: 3px solid #8a8585;
+    border: 2px solid #8a8585;
 }
 .projects-heading, .about-container h2 {
     font-family: 'Work Sans', sans-serif;
@@ -169,7 +171,7 @@ body {
     line-height: 1.5;
 }
 .project-details a:hover {
-    background-color: #ffcb08;
+    background-color: #96cdf1;
 }
 .redux-logo, .jquery-logo {
     height: 30px;
@@ -228,5 +230,11 @@ body {
 @media(min-width: 1024px) {
     .brief-intro {
        padding-top: 50px;
+    }
+    .project-details {
+        width: 60%;
+    }
+    .project {
+        max-width: 80%;
     }
 }
