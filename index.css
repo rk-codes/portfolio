@@ -78,14 +78,10 @@ body {
     width: 170px;
 }
 .hero-container {
-    background-color: #68c39f;
     color: white;
     padding: 10px;
     height: 700px;
     text-align: center;
-    /* margin-top: 60px; */
-    /* background-image: url('./assets/hero_pic_r.jpg'); */
-    /* background-image: url('http://ak9.picdn.net/shutterstock/videos/7610479/thumb/1.jpg'); */
     background-image: url('./assets/hero_background.jpg');
     background-size: cover;
     /* background-position: center; */
@@ -106,9 +102,6 @@ body {
     flex-direction: column;
     width: 100%;
     margin: 0 auto;
-    /* background-image: url('./assets/projects_background.jpg'); */
-    /* background-size: cover;
-    background-repeat: no-repeat; */
 }
 .projects-heading, .about-container h2{
     text-align: center;
@@ -141,10 +134,6 @@ body {
 }
 .project-img {
     max-width: 100%;
-    border: 3px solid white;
-    /* width: 450px; */
-    /* max-width: 80%; 
-    max-height: 80%; */
     border: 2px solid #8a8585;
 }
 .projects-heading, .about-container h2 {
