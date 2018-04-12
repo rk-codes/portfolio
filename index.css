@@ -167,12 +167,15 @@ body {
     color: white;
     padding: 5px;
 }
+.footer-container h3 {
+    text-transform: uppercase;
+}
 .footer-container {
     text-align: center;
     background-color: #403b3b;
     padding: 20px;
     color: white;
-    text-transform: uppercase;
+ 
 }
 .fa-react {
     color: rgb(34, 214, 214);
