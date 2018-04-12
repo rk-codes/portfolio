@@ -3,6 +3,7 @@
 }
 body {
     font-size: 18px;
+    margin: 0;
 }
 /* Navigation section */
 .navbar {
@@ -11,7 +12,7 @@ body {
     background-color: #403b3b;
     position: fixed;
     top: 0;
-    width: 99%;
+    width: 100%;
     opacity: 0.8;
 }
 .navbar p {
@@ -37,6 +38,7 @@ body {
     max-width: 600px;
     color: black;
     font-weight: 400;
+    font-family: sans-serif;
 }
 .brief-intro h1 {
     font-family: 'Work Sans', sans-serif;
@@ -55,11 +57,12 @@ body {
 /* About section */
 .about-section {
     margin-top: 8%;
-    padding: 20px;
+    padding: 20px 0;
     font-family: 'Work Sans', sans-serif;
 }
-.about-section h2 ,.projects-container h2 {
-    text-align: center;
+.about-section h2, .projects-container h2 {
+    /* text-align: center; */
+    margin-left: 4%;
     width: 40%;
     border-bottom: 1px solid black;
 }
@@ -67,11 +70,11 @@ body {
     margin: 10px 0;
     display: flex;
     justify-content: center;
-    padding: 15px;
+    padding: 25px;
 }
 .about-data {
     align-self: center;
-    margin-right: 5%;
+    /* margin-right: 5%; */
     text-align: center;
     line-height: 1.7;
 }
@@ -109,7 +112,7 @@ body {
     margin: 0 auto;
 }
 .projects-heading, .about-section h2{
-    text-align: center;
+    /* text-align: center; */
     text-transform: uppercase;
 }
 .project {
@@ -119,7 +122,7 @@ body {
     margin-bottom: 50px;
     background: white;
     max-width: 90%;
-    margin: 30px auto;
+    margin: 25px auto;
     border-bottom: 1px solid gray;
 }
 .icons-box {
@@ -158,6 +161,7 @@ body {
 }
 .project-details p {
     line-height: 1.5;
+    text-align: justify;
 }
 .project-details a:hover {
     background-color: #96cdf1;
@@ -177,6 +181,7 @@ body {
     text-transform: uppercase;
 }
 .footer-container {
+    font-family: sans-serif;
     text-align: center;
     background-color: #403b3b;
     padding: 20px;
@@ -205,7 +210,7 @@ body {
         height: 100%;   
     }
     .about-data {
-        max-width: 50%;      
+        max-width: 65%;      
     }
 }
 @media(max-width: 769px) {
@@ -218,8 +223,8 @@ body {
     .brief-intro {
         margin: 30% auto;
     }
-    .navbar {
-        width: 96%;
+    .about-section h2, .projects-container h2 {
+        width: 60%;
     }
     .project {
         margin: 10px auto;
@@ -234,5 +239,8 @@ body {
     }
     .project {
         max-width: 80%;
+    }
+    .about-container {
+        padding: 15px 0;
     }
 }
