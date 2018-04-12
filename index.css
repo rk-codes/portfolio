@@ -4,6 +4,7 @@
 body {
     font-size: 18px;
 }
+/* Navigation section */
 .navbar {
     display: flex;
     justify-content: flex-end;
@@ -31,6 +32,7 @@ body {
     display: inline;
     margin: 15px;
 }
+/* Headline section */
 .brief-intro {
     max-width: 600px;
     color: black;
@@ -50,6 +52,7 @@ body {
     color: rgb(84, 224, 219);
     font-weight: 700;
 }
+/* About section */
 .about-section {
     margin-top: 8%;
     padding: 20px;
@@ -98,6 +101,7 @@ body {
 .hr-line {
     color: #ffcb08;
 }
+/* Projects section */
 .projects-container{
     display: flex;
     flex-direction: column;
@@ -167,6 +171,8 @@ body {
     color: white;
     padding: 5px;
 }
+/* Footer section */
+
 .footer-container h3 {
     text-transform: uppercase;
 }
@@ -175,7 +181,6 @@ body {
     background-color: #403b3b;
     padding: 20px;
     color: white;
- 
 }
 .fa-react {
     color: rgb(34, 214, 214);
