@@ -4,6 +4,7 @@
 body {
     font-size: 18px;
     margin: 0;
+    font-family: 'Work Sans', sans-serif;
 }
 /* Navigation section */
 .navbar {
@@ -16,11 +17,11 @@ body {
     opacity: 0.8;
 }
 .navbar p {
-    font-family: 'Playball', cursive;
     color: white;
 }
 .nav-list {
     list-style: none; 
+    font-family: sans-serif;
 }
 .nav-list a{
     text-decoration: none;
@@ -41,9 +42,8 @@ body {
     font-family: sans-serif;
 }
 .brief-intro h1 {
-    font-family: 'Work Sans', sans-serif;
     text-transform: uppercase;
-    font-size: 2.5em;
+    font-size: 2.3em;
     font-weight: 400;
     color: white;
 }
@@ -51,17 +51,16 @@ body {
     font-size: 1.5em;
 }
 .brief-intro span{
-    color: rgb(84, 224, 219);
+    /* color: rgb(84, 224, 219); */
+    color: #71ca8a;
     font-weight: 700;
 }
 /* About section */
 .about-section {
     margin-top: 8%;
     padding: 20px 0;
-    font-family: 'Work Sans', sans-serif;
 }
 .about-section h2, .projects-container h2 {
-    /* text-align: center; */
     margin-left: 4%;
     width: 40%;
     border-bottom: 1px solid black;
@@ -79,7 +78,7 @@ body {
     line-height: 1.7;
 }
 .about-data p {
-    text-align: justify;
+    text-align: left;
 	margin: 0 auto;
     line-height: 1.5;
 }
@@ -112,7 +111,6 @@ body {
     margin: 0 auto;
 }
 .projects-heading, .about-section h2{
-    /* text-align: center; */
     text-transform: uppercase;
 }
 .project {
@@ -141,7 +139,6 @@ body {
     border: 2px solid #8a8585;
 }
 .projects-heading, .about-section h2 {
-    font-family: 'Work Sans', sans-serif;
     font-size: 1.8em;
 }
 .project-name {
@@ -151,7 +148,6 @@ body {
 .project-details {
     padding: 8px;
     margin-left: 20px;
-    font-family: 'Work Sans', sans-serif;
 }
 .project-details a {
     border: 2px solid #319bde;
@@ -161,7 +157,7 @@ body {
 }
 .project-details p {
     line-height: 1.5;
-    text-align: justify;
+    text-align: left;
 }
 .project-details a:hover {
     background-color: #96cdf1;
