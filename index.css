@@ -36,22 +36,19 @@ body {
 }
 /* Headline section */
 .brief-intro {
-    max-width: 600px;
     color: black;
     font-weight: 400;
     font-family: sans-serif;
 }
 .brief-intro h1 {
     text-transform: uppercase;
-    font-size: 2.3em;
+    font-size: 2.0em;
     font-weight: 400;
-    color: white;
 }
 .brief-intro p {
-    font-size: 1.5em;
+    font-size: 1.1em;
 }
 .brief-intro span{
-    /* color: rgb(84, 224, 219); */
     color: #71ca8a;
     font-weight: 700;
 }
@@ -73,7 +70,6 @@ body {
 }
 .about-data {
     align-self: center;
-    /* margin-right: 5%; */
     text-align: center;
     line-height: 1.7;
 }
@@ -94,10 +90,13 @@ body {
 .hero-container {
     color: white;
     padding: 10px;
-    height: 700px;
+    height: 100vh;
     text-align: center;
-    background-image: url('./assets/hero_background.jpg');
+    background-image: url('./assets/hero_bg.jpeg');
     background-size: cover;
+
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .hr-line {
@@ -180,6 +179,7 @@ body {
     font-family: sans-serif;
     text-align: center;
     background-color: #403b3b;
+    opacity: 0.8;
     padding: 20px;
     color: white;
 }
@@ -218,6 +218,7 @@ body {
     }
     .brief-intro {
         margin: 30% auto;
+        padding-top: 5%;
     }
     .about-section h2, .projects-container h2 {
         width: 60%;
@@ -228,7 +229,7 @@ body {
 }
 @media(min-width: 1024px) {
     .brief-intro {
-       padding-top: 50px;
+       padding-top: 10%;
     }
     .project-details {
         width: 60%;
@@ -240,3 +241,10 @@ body {
         padding: 15px 0;
     }
 }
+@media  (min-width: 1024px) and (max-width: 1366px) {
+    .brief-intro {
+        padding-top: 10%;
+        margin: 30% auto;
+        font-size: 1.8em;
+     }
+  }
